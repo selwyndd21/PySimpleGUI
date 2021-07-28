@@ -34,7 +34,7 @@ graph = sg.Graph(canvas_size=(400, 400),
 # Window layout
 layout = [[sg.Text('Example of Using Math with a Graph', justification='center', size=(50, 1), relief=sg.RELIEF_SUNKEN)],
           [graph],
-          [sg.Text('y = sin(x / x2 * x1)', font='COURIER 18')],
+          [sg.Text('y = x1 * sin(x / x2)', font='COURIER 18')],
           [sg.Text('x1'), sg.Slider((0, 200), orientation='h',
                                  enable_events=True, key='-SLIDER-')],
           [sg.Text('x2'), sg.Slider((1, 200), orientation='h', enable_events=True, key='-SLIDER2-')]]
